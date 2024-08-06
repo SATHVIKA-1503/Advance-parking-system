@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".login.LoginActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+    </LinearLayout>
+
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/optRoundCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:optRoundCardBackgroundColor="#ff7133"
+        app:optRoundCardCornerRadius="50dp"
+        app:optRoundCardElevation="0dp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardLeftTopCorner="true"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardRightTopCorner="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginBottom="24dp"
+
+                        android:text="Car Parking"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal" />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layoutInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="24dp"
+                        android:orientation="vertical">
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_til"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:textColorHint="#000">
+
+                            <EditText
+                                android:textColor="#000"
+                                android:id="@+id/l_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_baseline_mark_email_read_24"
+                                android:drawablePadding="16dp"
+
+                                android:hint="Email"
+                                android:text=""
+                                android:inputType="textEmailAddress"
+                                android:textSize="16sp"
+                                tools:ignore="RtlCompat" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/password_til"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColorHint="#000"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/l_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                                android:drawablePadding="16dp"
+                                android:textColor="#000"
+                                android:hint="Password"
+                                android:text=""
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textSize="16sp"
+                                tools:ignore="RtlCompat" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/reset_password"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="12dp"
+
+                        android:text="Forget your Password?"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/l_loginB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/login_button"
+
+                    android:text="Log in"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/reg_now"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+                    android:text="Register Now"
+                    android:textColor="#FFF"
+                    android:textSize="18dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/optRoundCardView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/optRoundCardView"
+        tools:ignore="RtlCompat" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

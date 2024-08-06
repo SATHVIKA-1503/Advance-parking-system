@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54595869224",
+    "project_id": "new-final-parking",
+    "storage_bucket": "new-final-parking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54595869224:android:ddc059ed5c18687ad8731d",
+        "android_client_info": {
+          "package_name": "com.estSb.carparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54595869224-iafaqqsnu0tbs74oeqjh2gvootq2s8h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo0CzBfrLiYeoVTwuS68-sZFxCm8JyB-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54595869224-iafaqqsnu0tbs74oeqjh2gvootq2s8h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

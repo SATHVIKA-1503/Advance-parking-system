@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.userdetail">
+
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF6200EE"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat"
+        app:popupTheme="@style/Theme.AppCompat"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Detail"
+            android:textColor="#FFF"
+
+            android:textSize="20dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/Rowtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Why ParkSetup Guidance System?\n\nSystem Requirements"
+            android:textColor="#0066ff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/Rowtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="1.The parking lot should have multiple floors where customers can park their cars.\n\n2.The parking lot should have multiple entry and exit points.\n\n3.Customers can collect a parking ticket from the entry points and can pay the parking fee at the exit points on their way out.\n\n4.Customers can pay the tickets at the automated exit panel or to the parking attendant.\n\n5.Customers can pay via both cash and credit cards.\n\n6.Customers should also be able to pay the parking fee at the customer’s info portal on each floor. If the customer has paid at the info portal, they don’t have to pay at the exit."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="#000" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

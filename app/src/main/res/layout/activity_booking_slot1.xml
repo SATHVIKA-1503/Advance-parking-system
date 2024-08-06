@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".Booking.booking_slot1">
+
+
+
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Parking Slot1"
+        android:textSize="32sp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_button"
+        android:id="@+id/Slot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:hint="  Slot id"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_button"
+        android:id="@+id/vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:hint="  vehicle id"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_button"
+        android:id="@+id/Time"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="  Current timing"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_button"
+        android:id="@+id/phone"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="  Phone No"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Now"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/Detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Booking Detail"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

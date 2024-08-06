@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".login.LoginandregisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagline"
+            android:text="Car Parking"
+            android:layout_below="@id/logo"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagline_1"
+            android:text="Image result for car parking description
+Parking is the act of stopping and disengaging a vehicle and leaving it unoccupied"
+            android:layout_below="@id/tagline"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:layout_above="@id/register"
+            android:text="L o g i n"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_button"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:layout_alignParentBottom="true"
+            android:text="R e g i s t e r"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/register_button"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
